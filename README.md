@@ -51,8 +51,9 @@ Examples of Non-Idempotent Operation:
 3. Describe two configuration models. What are disadvantages and advantages of each model?
 The two models are Push based and Pull Based.
 
-####Push Based Configuration System:
+Push Based Configuration System:
 
+Pull Based Configuration System:
 
 4. What are some of the consquences of not having proper configuration management?
 
