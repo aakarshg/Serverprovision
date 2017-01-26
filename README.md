@@ -33,15 +33,15 @@ The required dependencies are as follows:
 
 ###Concepts
 1. Define idempotency. Give two examples of an idempotent operation and non-idempotent operation.
-An operation is defined as idempotent if the result remains constant and doesn't depend on the number of times the operation has been called. For ex: Setting a variable i's value as 1. Irrespective of the number of times we call this operation, the result doesn't vary i.e.  the variable i's value is being set to 1. But take the example of increment operator, the variables value will keep increasing, thus its not idempotent.
+An operation is defined as idempotent if the result remains constant and doesn't depend on the number of times the operation has been called. For ex: Setting a variable i's value as 1. Irrespective of the number of times we call this operation, the result doesn't vary i.e.  the variable i's value is being set to 1. But take the example of decrement operator, the variables value will keep decreasing, thus its not idempotent, as the result keeps varying. 
 
 Examples of Idempotent Operation:
-* asda
-* dasd
+* HTTP GET: This operation will be ideally returning the same value as long as server's state doesn't change
+* HTTP HEAD: Just like GET, this will also be ideally returning just the header as long as the server's state doesn't change.
 
 Examples of Non-Idempotent Operation:
-* asd
-* asd
+* Append operation on a file: It will keep appending the same value in the file, therefore it can't be said as an idempotent operation as the value keeps changing.
+* Ping operation: Practically speaking the value will keep changing thus it's not idempotent.
 
 
 2. Describe several issues related to management of your inventory.
@@ -49,7 +49,11 @@ Examples of Non-Idempotent Operation:
 
 
 3. Describe two configuration models. What are disadvantages and advantages of each model?
+The two models are Push based and Pull Based.
 
+####Push Based Configuration System:
 
 
 4. What are some of the consquences of not having proper configuration management?
+
+
