@@ -49,6 +49,11 @@ Examples of Non-Idempotent Operation:
 Q2. Describe several issues related to management of your inventory.
 
 There are many things that comprise of inventory. It ranges from the ip addresses owned to keys, passwords and API tokens. If we want to provision new servers, without proper inventory management we might request new servers although we still have a couple of servers that are free. 
+How can we centralize everything but also ensure that individual teams can still request and gain access to servers without going through a tedious process. 
+Imagine there are 100s of teams, how can the inventory be efficiently managed but also ensuring that all teams requirements are met without having to burden other teams requirements. 
+Inventory management is a tedious task because of the enormous services it needs to track, and also provision them when requested. Thus, it has to keep track of everything. 
+If the requests can't be tackled through the resources present, we will also need to request for additional resources and ensure that its allotted to the team requested. 
+Also the compability of tools and the environment needs to be taken into account. 
 
 Q3. Describe two configuration models. What are disadvantages and advantages of each model?
 The two models are Push based and Pull Based.
