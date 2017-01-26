@@ -34,6 +34,7 @@ The required dependencies are as follows:
 ###Concepts
 
 Q1. Define idempotency. Give two examples of an idempotent operation and non-idempotent operation.
+
 An operation is defined as idempotent if the result remains constant and doesn't depend on the number of times the operation has been called. For ex: Setting a variable i's value as 1. Irrespective of the number of times we call this operation, the result doesn't vary i.e.  the variable i's value is being set to 1. But take the example of decrement operator, the variables value will keep decreasing, thus its not idempotent, as the result keeps varying. 
 
 Examples of Idempotent Operation:
@@ -54,7 +55,27 @@ The two models are Push based and Pull Based.
 
 Push Based Configuration System:
 
+In push based configuration system, the server is responsible for pushing configuration and other important softwares to the nodes where it installs them remotely. Thus, server takes care of configuration of nodes in Push based configuration system.
+
+Advantages:
+1. Since the master is responsible for configuring and deployment of nodes, it can orchestrate the node deployment. This would be definitely helpful in scenarios where a particular set of nodes. 
+2. It is easier to manage when compared to Pull Based system.
+
+Disadvantages:
+1. Because server is in charge of configuring, it becomes cumbersome when trying to scale like if you want to deploy 100 images simultaneously it'd load to performance issues.
+2. Independent configuration is not usually possible i.e. to boot a new node and have it configure on its own(basically the idea of pull based system).
+
 Pull Based Configuration System:
+
+In pull based configuration system, the individual nodes contact the master server and request their configuration and other importnat softwares and configure themselves. Thus, the individual nodes are responsible for configuration in Pull based configuration system.
+
+Advantages:
+1. The nodes can continue configuration of themselves without the intervention of master, thus not impacting the performance of master. Thus scaling becomes comparitively easier as the new nodes that come in just setup on their own after getting instructions from master.
+2. It is better at ensuring that the nodes stay in sync.
+
+Disadvantages:
+1. In case of instaneous deployment, it'd impact performance of master server because all the nodes will be se ding a request to master server. 
+2. Security is a big concern because it connects back to the master server. 
 
 Q4. What are some of the consquences of not having proper configuration management?
 
