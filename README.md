@@ -33,7 +33,15 @@ The required dependencies are as follows:
 
 ###Concepts
 1. Define idempotency. Give two examples of an idempotent operation and non-idempotent operation.
+An operation is defined as idempotent if the result remains constant and doesn't depend on the number of times the operation has been called. For ex: Setting a variable i's value as 1. Irrespective of the number of times we call this operation, the result doesn't vary i.e.  the variable i's value is being set to 1. But take the example of increment operator, the variables value will keep increasing, thus its not idempotent.
 
+Examples of Idempotent Operation:
+* asda
+* dasd
+
+Examples of Non-Idempotent Operation:
+* asd
+* asd
 
 
 2. Describe several issues related to management of your inventory.
