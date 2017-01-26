@@ -1,7 +1,7 @@
 {
   "name": "Server provision",
   "version": "0.0.0",
-  "description": "Automating fool-proof provisioning",
+  "description": "Automating fail-proof provisioning",
   "main": "main.js",
   "author": "Aakarsh Gopi",
   "license": "ISC",
