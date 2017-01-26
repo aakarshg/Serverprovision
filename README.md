@@ -32,7 +32,8 @@ The required dependencies are as follows:
 * fs
 
 ###Concepts
-1. Define idempotency. Give two examples of an idempotent operation and non-idempotent operation.
+
+Q1. Define idempotency. Give two examples of an idempotent operation and non-idempotent operation.
 An operation is defined as idempotent if the result remains constant and doesn't depend on the number of times the operation has been called. For ex: Setting a variable i's value as 1. Irrespective of the number of times we call this operation, the result doesn't vary i.e.  the variable i's value is being set to 1. But take the example of decrement operator, the variables value will keep decreasing, thus its not idempotent, as the result keeps varying. 
 
 Examples of Idempotent Operation:
@@ -44,17 +45,17 @@ Examples of Non-Idempotent Operation:
 * Ping operation: Practically speaking the value will keep changing thus it's not idempotent.
 
 
-2. Describe several issues related to management of your inventory.
+Q2. Describe several issues related to management of your inventory.
 
 
 
-3. Describe two configuration models. What are disadvantages and advantages of each model?
+Q3. Describe two configuration models. What are disadvantages and advantages of each model?
 The two models are Push based and Pull Based.
 
 Push Based Configuration System:
 
 Pull Based Configuration System:
 
-4. What are some of the consquences of not having proper configuration management?
+Q4. What are some of the consquences of not having proper configuration management?
 
 
