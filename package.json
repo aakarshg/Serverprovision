@@ -1,0 +1,14 @@
+{
+  "name": "Server provision",
+  "version": "0.0.0",
+  "description": "Automating fool-proof provisioning",
+  "main": "main.js",
+  "author": "Aakarsh Gopi",
+  "license": "ISC",
+  "dependencies": {
+    "os": "0.1.x",
+    "fs-extra": "2.0.x",
+    "aws-sdk": "2.7.x",
+    "needle": "1.4.x"
+  }
+}
