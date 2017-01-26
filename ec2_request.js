@@ -18,7 +18,7 @@ AWS.config.loadFromPath('./config.json');
 var ec2 = new AWS.EC2({apiVersion: '2016-11-15'});
 
 var params = {
-   ImageId: 'ami-9be6f38c', // amzn-ami-2011.09.1.x86_64-ebs
+   ImageId: 'ami-0b33d91d', // amazon supported linux image that includes  Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages
    InstanceType: 't2.micro',
    MinCount: 1,
    MaxCount: 1
