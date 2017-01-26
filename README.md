@@ -48,7 +48,7 @@ Examples of Non-Idempotent Operation:
 
 Q2. Describe several issues related to management of your inventory.
 
-
+There are many things that comprise of inventory. It ranges from the ip addresses owned to keys, passwords and API tokens. If we want to provision new servers, without proper inventory management we might request new servers although we still have a couple of servers that are free. 
 
 Q3. Describe two configuration models. What are disadvantages and advantages of each model?
 The two models are Push based and Pull Based.
@@ -80,4 +80,8 @@ Disadvantages:
 
 Q4. What are some of the consquences of not having proper configuration management?
 
-
+The most important consequences is that its security is compromised. Some other consequences include:
+1. It becomes difficult to manage the system due to improper configuration as some nodes maybe running different versions.
+2. It can also lead to system failure in certain cases.
+3. It becomes difficult to manage all the changes done to items related to software.
+4. Thus it also track changes made to the system. It'd make it impossible to track the old versions and their requirements. If a customer running an old version has found a bug, it'd be difficult to fix it.
