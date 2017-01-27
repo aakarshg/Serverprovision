@@ -65,12 +65,12 @@ Push Based Configuration System:
 In push based configuration system, the server is responsible for pushing configuration and other important softwares to the nodes where it installs them remotely. Thus, server takes care of configuration of nodes in Push based configuration system.
 
 Advantages:
-1. Since the master is responsible for configuring and deployment of nodes, it can orchestrate the node deployment. This would be definitely helpful in scenarios where a particular set of nodes. 
+1. Since the master is responsible for configuring and deployment of nodes, it can orchestrate the node deployment. This would be definitely helpful in scenarios where a particular set of nodes. <br>
 2. It is easier to manage when compared to Pull Based system.
 
 
 Disadvantages:
-1. Because server is in charge of configuring, it becomes cumbersome when trying to scale like if you want to deploy 100 images simultaneously it'd load to performance issues.
+1. Because server is in charge of configuring, it becomes cumbersome when trying to scale like if you want to deploy 100 images simultaneously it'd load to performance issues.<br>
 2. Independent configuration is not usually possible i.e. to boot a new node and have it configure on its own(basically the idea of pull based system).
 
 Pull Based Configuration System:
@@ -78,17 +78,17 @@ Pull Based Configuration System:
 In pull based configuration system, the individual nodes contact the master server and request their configuration and other importnat softwares and configure themselves. Thus, the individual nodes are responsible for configuration in Pull based configuration system.
 
 Advantages:
-1. The nodes can continue configuration of themselves without the intervention of master, thus not impacting the performance of master. Thus scaling becomes comparitively easier as the new nodes that come in just setup on their own after getting instructions from master.
+1. The nodes can continue configuration of themselves without the intervention of master, thus not impacting the performance of master. Thus scaling becomes comparitively easier as the new nodes that come in just setup on their own after getting instructions from master.<br>
 2. It is better at ensuring that the nodes stay in sync.
 
 Disadvantages:
-1. In case of instaneous deployment, it'd impact performance of master server because all the nodes will be se ding a request to master server. 
+1. In case of instaneous deployment, it'd impact performance of master server because all the nodes will be se ding a request to master server. <br>
 2. Security is a big concern because it connects back to the master server. 
 
 Q4. What are some of the consquences of not having proper configuration management?
 
 The most important consequences is that its security is compromised. Some other consequences include:
-1. It becomes difficult to manage the system due to improper configuration as some nodes maybe running different versions.
-2. It can also lead to system failure in certain cases.
-3. It becomes difficult to manage all the changes done to items related to software.
+1. It becomes difficult to manage the system due to improper configuration as some nodes maybe running different versions.<br>
+2. It can also lead to system failure in certain cases.<br>
+3. It becomes difficult to manage all the changes done to items related to software.<br>
 4. Thus it also track changes made to the system. It'd make it impossible to track the old versions and their requirements. If a customer running an old version has found a bug, it'd be difficult to fix it.
