@@ -17,6 +17,8 @@ The main.js contains code to provision an ubuntu-14-04-x64 image from digitaloce
 * To delete the droplet uncomment line 104 to 117 and edit droplet id on line 106.
 * Please don't run create droplet more than once. 
 
+References: http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ec2-example-creating-an-instance.html
+
 ###Screencast
 Here's the link to screencast: http://screencast-o-matic.com/watch/cbVOVHQMpQ
 
