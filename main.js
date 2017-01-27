@@ -81,7 +81,7 @@ function getinfo(){
     var dropletId=myobj.dropletID;
     client.getDropletInfo(dropletId, function(err, resp, body) {
 
-    console.log("Getting droplet info");
+    console.log("Getting IP address");
     // console.log(body);
     var ipadd = resp.body;
     // StatusCode 202 - Means server accepted request.
