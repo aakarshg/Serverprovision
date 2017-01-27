@@ -87,7 +87,7 @@ Disadvantages:
 
 Q4. What are some of the consquences of not having proper configuration management?
 
-The most important consequences is that its security is compromised. Some other consequences include:
+The most important consequences is that its security is compromised. Some other consequences include:<br>
 1. It becomes difficult to manage the system due to improper configuration as some nodes maybe running different versions.<br>
 2. It can also lead to system failure in certain cases.<br>
 3. It becomes difficult to manage all the changes done to items related to software.<br>
