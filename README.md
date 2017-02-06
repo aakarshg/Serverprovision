@@ -1,7 +1,3 @@
-# HW1-A
-Name: Aakarsh Gopi
-
-Unityid: agopi
 
 ###Provisioning Servers
 The main.js contains code to provision an ubuntu-14-04-x64 image from digitalocean's nyc server. In case of any issue occuring, and say if we arent able to provision from digitalocean, this code will call another module ec2_request.js's function runaws(). The runaws will basically create an instance and run it. 
